@@ -10,20 +10,18 @@
 ## Installation
 
 - Clone the repo
-- Run `npm install dotenv`
 - Run `npm install`
+- Run `npm install dotenv`
 
 ## Usage
 
 - Rename `.env.example` to `.env`
+```
+mv .env.example .env   # in linux terminal
+```
 - Fill the `.env` file with your Codeforces `handle`, `password` and `tags` you want to scrape
 - Run `node index.js`
 - The problems will be saved in the `problems.md` file
-
-## Example
-
-- Run `node .`
-- The problems will be saved in `problems.md`
 
 ## .env.example
 
