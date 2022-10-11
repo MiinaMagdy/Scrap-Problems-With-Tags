@@ -92,7 +92,8 @@ async function Scrape() {
 
     for (let pageIndex = 1; pageIndex <= lastPageNumber; pageIndex++) {
         await driver.get('https://codeforces.com/problemset/page/' + pageIndex + '?tags=' + tags);
-
+        
+        bar1.update(pageIndex, { filename: "Pages" });
         try {
             await driver.wait(until.elementLocated(By.className('accepted-problem')), 2000);
         } catch (err) {
@@ -113,7 +114,6 @@ async function Scrape() {
                 cntProblems++;
             }
         }
-        bar1.update(pageIndex, { filename: "Pages" });
     }
 
     bar1.stop();
