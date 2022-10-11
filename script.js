@@ -34,10 +34,7 @@ async function Scrape() {
     
     
     // launch the browser
-    let options = new firefox.Options();
-    // options.addArguments("-headless");
-    options.setBinary("./geckodriver");
-    let driver = await new Builder().forBrowser(Browser.FIREFOX).setFirefoxOptions(options).build();
+    let driver = await new Builder().forBrowser("firefox").build();
     
     // get to codeforces login page
     await driver.get('https://codeforces.com/enter?back=/problemset?tags=' + tags);
@@ -61,7 +58,7 @@ async function Scrape() {
     
     let cntProblems = 0;
     let problemsFile = fs.createWriteStream('problems.md');
-    problemsFile.write(`# ${tags.replace(/,/g, ' ')} Problems` + '\n');
+    problemsFile.write(`# ${tags.replace(/,/g, ' ')} Problems Solved by ${handle}\n`);
     
     for (let pageIndex = 1; pageIndex <= lastPageNumber; pageIndex++) {
         await driver.get('https://codeforces.com/problemset/page/' + pageIndex + '?tags=' + tags);
