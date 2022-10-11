@@ -37,5 +37,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Video
 
-https://user-images.githubusercontent.com/71466151/195212905-98ae574c-75cc-47c7-9621-4425905ad9b6.mp4
-
+<https://user-images.githubusercontent.com/71466151/195212905-98ae574c-75cc-47c7-9621-4425905ad9b6.mp4>
