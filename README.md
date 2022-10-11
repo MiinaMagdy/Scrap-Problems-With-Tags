@@ -13,7 +13,7 @@
 - Enter your password
 - The problems will be saved in the `problems.md` file
 ## Example
-- Run `node .js`
+- Run `node .`
 - Enter `dp,greedy`
 - Enter `MiinaMagdy`
 - Enter `*********`
