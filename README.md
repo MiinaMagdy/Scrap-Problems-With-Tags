@@ -17,7 +17,7 @@
 
 - Rename `.env.example` to `.env`
 ```
-mv .env.example .env
+mv .env.example .env   # in linux terminal
 ```
 - Fill the `.env` file with your Codeforces `handle`, `password` and `tags` you want to scrape
 - Run `node index.js`
