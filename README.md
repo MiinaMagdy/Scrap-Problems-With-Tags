@@ -1,5 +1,5 @@
 # Scrap-Problems-With-Tags
-**Scraping problems from Codeforces with tags**
+**Scraping solved problems from Codeforces with tags**
 ## Requirements
 - nodejs
 - npm
