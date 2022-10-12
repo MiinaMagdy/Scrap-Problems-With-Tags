@@ -37,4 +37,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Video
 
-[![Follow Mohamed El-Qassas GitHub](https://user-images.githubusercontent.com/71466151/195331673-33c2f11b-2106-4025-b82d-ada49e002fcb.png)](https://drive.google.com/file/d/1b9NbXnEX_gWeinIv4BewDbUohGSL1yH3/preview)
+[![Video](https://user-images.githubusercontent.com/71466151/195331673-33c2f11b-2106-4025-b82d-ada49e002fcb.png)](https://drive.google.com/file/d/1b9NbXnEX_gWeinIv4BewDbUohGSL1yH3/preview)
