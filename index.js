@@ -44,7 +44,7 @@ async function Scrape() {
     let driver = await new Builder().forBrowser("firefox").setFirefoxOptions(new firefox.Options().headless()).build();
 
     // get to codeforces login page
-    await driver.get('https://codeforces.com/enter?back=/problemset?tags=' + tags);
+    await driver.get('https://codeforces.com/enter?back=/problemset?tags=' + tags.replace(/[ ,]+/g, ","));
     await driver.findElement(By.id('handleOrEmail')).sendKeys(handle);
     await driver.findElement(By.id('password')).sendKeys(password);
     await driver.findElement(By.className('submit')).click();
