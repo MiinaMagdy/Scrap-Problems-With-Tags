@@ -91,7 +91,7 @@ async function Scrape() {
     problemsFile.write(`# ${tags.replace(/,/g, ' ')} Problems Solved by ${handle}\n\n`);
 
     for (let pageIndex = 1; pageIndex <= lastPageNumber; pageIndex++) {
-        await driver.get('https://codeforces.com/problemset/page/' + pageIndex + '?tags=' + tags);
+        await driver.get('https://codeforces.com/problemset/page/' + pageIndex + '?tags=' + tags.replace(/[ ,]+/g, ","));
         
         bar1.update(pageIndex, { filename: "Pages" });
         try {
